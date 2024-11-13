@@ -1,28 +1,46 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
 .outer-grid {
     display: grid;
     grid-template-columns: 1fr minmax(750px, 5fr);
+    background-color: #e2e8f0;
 }
 
 .side-bar {
     grid-column: 1;
+    background-color: #1992d4;
+    color: white;
+    grid-row: 1/3;
 }
 
 .header-content {
     grid-column: 2/-1;
+    background-color: #ffffff;
+    padding:1rem 2rem;
 }
 
 .main-content {
     grid-column: 2/-1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 9ch 1fr 9ch 1fr;
+    grid-template-rows: 6ch 1fr 6ch 1fr;
     column-gap: 18px;
+    /* background-color: #e2e8f0; */
+    margin: 1rem 2rem;
 }
 
 .inner-grid {
     grid-row: 2 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .project-title,
@@ -43,4 +61,11 @@
 }
 .trending-tile {
     grid-column: 2;
+}
+
+.card, 
+.announcements-tile,
+.trending-tile {
+    background-color: #ffffff;
+    padding: 1rem;
 }
