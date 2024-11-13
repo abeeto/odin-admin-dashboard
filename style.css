@@ -1,0 +1,46 @@
+.outer-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(750px, 5fr);
+}
+
+.side-bar {
+    grid-column: 1;
+}
+
+.header-content {
+    grid-column: 2/-1;
+}
+
+.main-content {
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 9ch 1fr 9ch 1fr;
+    column-gap: 18px;
+}
+
+.inner-grid {
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-title,
+.announcement-title {
+    grid-row: 1;
+}
+
+.trending-title {
+    grid-column: 2; 
+    grid-row: 3;
+}
+.project-title {
+    grid-column: 1;
+}
+.announcement-title,
+.announcements-tile {
+    grid-column: 2;
+}
+.trending-tile {
+    grid-column: 2;
+}
