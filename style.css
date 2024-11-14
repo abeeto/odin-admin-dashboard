@@ -28,11 +28,13 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
+    color:rgb(78, 78, 78);
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Tangerine', Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: break-word;
     text-wrap: balance;
+    color:rgb(29, 29, 29);
 }
 
 h1 {
