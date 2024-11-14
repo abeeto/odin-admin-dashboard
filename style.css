@@ -136,6 +136,7 @@ h2, h3 {
     font-size: clamp(2rem, 3rem, 4rem);
     column-gap: 4px;
     font-family: "Tangerine", cursive;
+    align-items: center;
 }
 
 .dash-user-actions > ul , .dash-info-options > ul {
@@ -148,4 +149,9 @@ h2, h3 {
     list-style-type: none;
     font-size: clamp(0.8rem, 1.3rem, 1.5rem);
     place-content: center;
+}
+
+.dash-user-actions li:hover, .dash-info-options li:hover {
+    cursor: pointer;
+    color:#bc4b51;
 }
