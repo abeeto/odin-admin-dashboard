@@ -17,6 +17,10 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
+
+img {
+    display: block;
+}
 body {
     font-size: 1rem;
     font-family: "Fraunces", serif;
@@ -61,7 +65,7 @@ h2, h3 {
 .header-content {
     grid-column: 2/-1;
     background-color: #f1f0ec;
-    padding:1rem 2rem;
+    padding:1rem 3rem;
     box-shadow: 2px 2px 3px #acafa0;
 }
 
@@ -69,11 +73,9 @@ h2, h3 {
     grid-column: 2/-1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 6ch 3fr 6ch 2fr;
+    grid-template-rows: 6ch min-content 6ch min-content;
     column-gap: 18px;
-    /* background-color: #e2e8f0; */
     padding: 2rem 2rem 4rem 1rem;
-    max-height: 100%;
 }
 
 .inner-grid {
@@ -147,11 +149,73 @@ h2, h3 {
 
 .dash-user-actions li, .dash-info-options li {
     list-style-type: none;
-    font-size: clamp(0.8rem, 1.3rem, 1.5rem);
+    font-size: 1.2rem;
     place-content: center;
 }
 
 .dash-user-actions li:hover, .dash-info-options li:hover {
     cursor: pointer;
     color:#bc4b51;
+}
+
+.header-top-search-panel {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    column-gap: 15%;
+}
+.search, .sm-account {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.searchbar {
+    background: rgb(218, 212, 212);
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.sm-account {
+    grid-template-columns: min-content min-content 1fr;
+    column-gap: 1rem;
+}
+
+.sm-account-name {
+    font-weight: 700;
+}
+
+.header-welcome-panel {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.lg-account {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 1rem;
+}
+
+.post-options {
+    display: grid;
+    column-gap: min(30px, 5%);
+    grid-template-rows: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+}
+
+.post-options > button {
+    border-radius: 50px;
+    background-color: #1c3321;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    font-family: "Tangerine", cursive;
+    display: grid;
+    place-content: center;
+}
+
+.lg-profile-pic, .sm-profile-pic {
+    border-radius: 50%;
 }
