@@ -49,7 +49,7 @@ h2, h3 {
     display: grid;
     grid-template-columns: 1fr minmax(750px, 5fr);
     background-color: #dad7cd;
-    background: linear-gradient(to bottom,rgb(233, 220, 188) 29px,#10819b 1px);
+    background: linear-gradient(to bottom,rgb(243, 234, 214) 29px,#10819b 1px);
     background-size: 100% 30px;
 }
 
@@ -99,7 +99,7 @@ h2, h3 {
     padding-inline: 2ch;
     width: max-content;
     display: inline-block;
-    background-color: rgba(235, 187, 55, 0.705);
+    background-color: rgba(235, 202, 93, 0.705);
     transform: rotate(-5deg);
     z-index: 666;
 }
@@ -154,6 +154,7 @@ h2, h3 {
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 1ch;
+    row-gap: 2ch;
 }
 
 .dash-user-actions li, .dash-info-options li {
