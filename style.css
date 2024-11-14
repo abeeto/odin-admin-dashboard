@@ -49,6 +49,8 @@ h2, h3 {
     display: grid;
     grid-template-columns: 1fr minmax(750px, 5fr);
     background-color: #dad7cd;
+    background: linear-gradient(to bottom,rgb(233, 220, 188) 29px,#10819b 1px);
+    background-size: 100% 30px;
 }
 
 .side-bar {
@@ -93,6 +95,13 @@ h2, h3 {
 .announcement-title,
 .trending-title {
     align-self: center;
+    height: 1.5em;
+    padding-inline: 2ch;
+    width: max-content;
+    display: inline-block;
+    background-color: rgba(235, 187, 55, 0.705);
+    transform: rotate(-5deg);
+    z-index: 666;
 }
 .announcement-title {
     grid-column: 2;
@@ -161,7 +170,7 @@ h2, h3 {
 .header-top-search-panel {
     display: grid;
     grid-template-columns: 6fr 2fr;
-    column-gap: 15%;
+    column-gap: min(25%, 250px);
 }
 .search, .sm-account {
     display: grid;
