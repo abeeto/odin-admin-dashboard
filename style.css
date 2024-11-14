@@ -145,7 +145,8 @@ h2, h3 {
     display: grid;
     grid-template-columns: 1fr;
     position:relative;
-    padding: 2.5rem 2rem;
+    padding: 2rem;
+    row-gap: 1rem;
 }
 
 .card::before {
@@ -157,6 +158,13 @@ h2, h3 {
     left: 0;
     content: "";
     border-radius: 8px 0 0 8px;
+}
+
+.card-actions {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: end;
+    column-gap: min(15%, 25px);
 }
 
 .logo{
@@ -199,8 +207,7 @@ h2, h3 {
 }
 
 .searchbar {
-    background: rgb(218, 212, 212);
-    border: 1px solid grey;
+    background: rgb(218, 218, 218);
     padding: 1rem;
     border-radius: 20px;
 }
