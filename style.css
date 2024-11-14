@@ -52,6 +52,10 @@ h2, h3 {
     background-color: #1c3321;
     color: white;
     grid-row: 1/3;
+    padding: 1.5rem;
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 4rem;
 }
 
 .header-content {
@@ -99,9 +103,6 @@ h2, h3 {
     justify-content: space-between;
     
 }
-
-
-
 .card, 
 .announcements-tile,
 .trending-tile {
@@ -127,4 +128,24 @@ h2, h3 {
     left: 0;
     content: "";
     border-radius: 8px 0 0 8px;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-size: clamp(2rem, 3rem, 4rem);
+    column-gap: 4px;
+    font-family: "Tangerine", cursive;
+}
+
+.dash-user-actions > ul , .dash-info-options > ul {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 1ch;
+}
+
+.dash-user-actions li, .dash-info-options li {
+    list-style-type: none;
+    font-size: clamp(0.8rem, 1.3rem, 1.5rem);
+    place-content: center;
 }
