@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Tangerine', Verdana, Geneva, Tahoma, sans-serif;
     overflow-wrap: break-word;
     text-wrap: balance;
-    color:rgb(29, 29, 29);
+    color:#1d1d1d;
 }
 
 h1 {
@@ -42,6 +42,13 @@ h1 {
 }
 h2, h3 {
     font-size: clamp(1.2rem, 35vw, 2rem);
+}
+.sidebar-icon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(321deg) brightness(103%) contrast(101%)
+}
+
+.other-icon {
+    filter: invert(31%) sepia(5%) saturate(15%) hue-rotate(21deg) brightness(90%) contrast(88%);
 }
 
 .outer-grid {
@@ -70,8 +77,10 @@ h2, h3 {
 .header-content {
     grid-column: 2/-1;
     background-color: #f1f0ec;
-    padding:1rem 3rem;
+    padding: 1rem 3rem;
     box-shadow: 2px 2px 3px #acafa0;
+    display: grid;
+    row-gap: 20px;
 }
 
 .main-content {
@@ -171,9 +180,7 @@ h2, h3 {
     align-items: end;
     column-gap: min(15%, 25px);
 }
-.sidebar-icon {
-    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(321deg) brightness(103%) contrast(101%)
-}
+
 .logo{
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -214,7 +221,7 @@ h2, h3 {
 }
 
 .searchbar {
-    background: rgb(218, 218, 218);
+    background: #dadada;
     padding: 1rem;
     border-radius: 20px;
 }
